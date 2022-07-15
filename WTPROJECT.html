@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="chr.css">
+<title>My website</title>
+</head>
+<body>
+<div class="navbar">
+  <a href="#home" class="ig"><img src="me.jpg" height="50px" width="50px" alt="avatar" title="anusha"></a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()"><i class="fa fa-align-justify" style="font-size:30px;color:black"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+
+    <a href="#" onclick="window.location.reload(true);"><i class="fa fa-home" style="font-size:20px;color:black">Home</i></a>
+    <a href="formss.html"><i class="fa fa-hourglass" style="font-size:20px;color:black">Exam</i></a>
+    <a href="#"><i class="fa fa-book" style="font-size:20px">Branch</i></a>
+    <a href="#"><i class="fa fa-phone" style="font-size:20px">Phone</i></a>
+  </div>
+  </div> 
+</div>
+  <div class="second">
+    <a href="#" onclick="window.location.reload(true);"><i class="fa fa-home" style="font-size:20px;color:black">Home</i></a>
+    <a href="formss.html" ><i class="fa fa-hourglass" style="font-size:20px;color:black"></i>Exam</a>
+    <div class="set">
+    <button class="d" onclick="mysunction()">
+      <i class="fa fa-book" style="font-size:20px"></i>Branch
+    </button>
+    <div class="dp" id="setting"></li>
+     <ul>
+      <li><a href="#">CSE</a>
+        <ul>
+      <li><a href="#">Faculaty</li></a>
+      <li><a href="#">Student</li></a>
+      </ul>
+      </li>
+     </ul>
+      <a href="#">ECE</a>
+      <a href="#">MECH</a>
+      <a href="#">EEE</a>
+      <a href="#">MME</a>
+      <a href="#">CHEM</a>
+      </div>
+    </div>
+    <a href="#"><i class="fa fa-phone" style="font-size:20px">Phone</i></a>
+  </div> 
+  <footer id="footer1">
+    <p>N181126@Copy right</p>
+    <div class="foot">
+      <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=8013495&style=0001&nbdigits=6&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+        <a href="#top" id="bottom"><i class="fa fa-arrow-circle-up" style="font-size:90px;color:white;"></i></a>        
+      </div>
+  </footer>
+  <div style="float: left;height: 500px;width: 23.33%;border-style: solid;"></div>
+  <div style="float: left;height: 500px; width:53.33%;margin : 0 auto;border-style: solid;">
+  <div class="slider" >
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="lib1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="cp.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="cse.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="nature1.jpg" alt="">
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <!-- <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    <!-- </div> -->
+    <!--manual navigation start-->
+     <!-- <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div> 
+    <!--manual navigation end-->
+  <!-- </div>  -->
+</div>
+</div>
+</div>
+  <!--image slider end-->
+  <div id="ns" style="float: right;height: 500px;width: 21.98%; border-style: solid;">
+    <center><h3><b><u>Notifications</h3></u></b></center>
+    <div name="noti">
+      <marquee class = "move" onmouseover = this.stop(); onmouseout = this.start(); direction="up">
+    <a href="https://examcell.rguktn.ac.in/">PUC-1st Year (2021-batch) Semester-1 regular examination results for May, 2022</a><br><br>
+    <a href="https://examcell.rguktn.ac.in/">PUC-2nd Year (2020-batch) Semester-1 regular examination results for April, 2022.</a><br><br>
+    <a href="https://examcell.rguktn.ac.in/"> Remedial registration link for Engineering Passed-out (2012-2016-batch students) Remedial registration link for All Semesters (A.Y.2021-22).</a><br><br>
+    <a href="https://examcell.rguktn.ac.in/"> PUC 2nd Year Semester-1(2018 and 2019-batches) remedial examination results, April, 2022.</a><br><br>
+    <a href="https://examcell.rguktn.ac.in/" > PUC 1st Year Semester-1(2019 and 2020-batches) remedial examination results, May, 2022.</a>
+  </marquee>
+  </div>
+  </div>
+  <script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 3000);
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+function mysunction() {
+  document.getElementById("setting").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.d')) {
+  var setting = document.getElementById("setting");
+    if (setting.classList.contains('show')) {
+      setting.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
